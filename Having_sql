@@ -1,0 +1,4 @@
+SELECT category,ceil(avg(price)) as Average_Price, count(*) as Total_Products
+FROM product
+group by Category
+having Total_Products>10
